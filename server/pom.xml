@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.team81</groupId>
+  <artifactId>illusive-server-parent</artifactId>
+  <version>3.1.42.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>illusive Server</name>
+
+    <scm>
+        <developerConnection>scm:git:git@github.com:Team81/DeceptionAgent.git</developerConnection>
+      <tag>HEAD</tag>
+  </scm>
+
+  <build>
+    <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.8.2</version>
+          <configuration>
+            <skip>true</skip>
+          </configuration>
+        </plugin>
+        <plugin>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.5.2</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.apache.maven.scm</groupId>
+              <artifactId>maven-scm-provider-gitexe</artifactId>
+              <version>1.9.4</version>
+            </dependency>
+          </dependencies>
+        </plugin>
+    </plugins>
+  </build>
+  <modules>
+    <module>common/version</module>
+    <module>common/dependency</module>
+    <module>common/parent</module>
+	<module>interactive</module>
+    <module>illusive-common</module>
+    <module>trap-common</module>
+    <module>tools</module>
+    <module>eventlog-reader</module>
+    <module>execution-server-api</module>
+    <module>execution-server</module>
+    <module>management-server</module>
+    <module>trap-admin-server</module>
+    <module>trap-server</module>
+    <module>installer</module>
+    <module>deploy-arts</module>
+  </modules>
+</project>
