@@ -8,10 +8,6 @@
   <packaging>pom</packaging>
   <name>illusive Server</name>
 
-    <scm>
-        <developerConnection>scm:git:git@github.com:Team81/DeceptionAgent.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
 
   <build>
     <plugins>
@@ -37,20 +33,5 @@
     </plugins>
   </build>
   <modules>
-    <module>common/version</module>
-    <module>common/dependency</module>
-    <module>common/parent</module>
-	<module>interactive</module>
-    <module>illusive-common</module>
-    <module>trap-common</module>
-    <module>tools</module>
-    <module>eventlog-reader</module>
-    <module>execution-server-api</module>
-    <module>execution-server</module>
-    <module>management-server</module>
-    <module>trap-admin-server</module>
-    <module>trap-server</module>
-    <module>installer</module>
-    <module>deploy-arts</module>
   </modules>
 </project>
