@@ -4,7 +4,7 @@
 
   <groupId>com.team81</groupId>
   <artifactId>illusive-server-parent</artifactId>
-  <version>3.1.42.0-SNAPSHOT</version>
+  <version>3.1.43.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>illusive Server</name>
 
